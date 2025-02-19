@@ -1,6 +1,3 @@
-import React from "react";
-import HorizontalScrollContainer from "./HorizontalScrollContainer";
-import { Code } from "lucide-react";
 
 const DocsPage = () => {
   return (

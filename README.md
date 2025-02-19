@@ -80,7 +80,7 @@ type Panel = {
 The component uses GSAP's ScrollTrigger for animation:
 
 ```typescript
-useEffect(() => {
+useGSAP(() => {
   const container = containerRef.current;
   const panelElements = panelsRef.current.filter(
     (panel): panel is HTMLDivElement => panel !== null
@@ -101,10 +101,6 @@ useEffect(() => {
     }
   });
 
-  return () => {
-    scrollTrigger.kill();
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-  };
 }, []);
 ```
 
