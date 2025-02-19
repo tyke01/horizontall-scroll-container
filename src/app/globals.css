@@ -19,3 +19,71 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/*  */
+h1, h2 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+code .str, pre .str {
+   color: #0ae448!important;
+}
+
+.panel pre.prettyprint {
+  font-size: 20px;
+  text-align: left;
+  width: auto;
+  font-weight: normal;
+  margin: 10px;
+  border: none;
+  background-color: #28292b;
+  color:var(--color-surface-white);
+}
+.prettyprint .linenums {
+  padding: 0;
+  list-style: none;
+}
+.prettyprint ol li {
+  background-color: #28292b;
+}
+
+.panel.red .prettyprint .linenums > li:nth-child(n+7):nth-child(-n+9), 
+.panel.gray .prettyprint .linenums > li:nth-child(10),
+.panel.purple .prettyprint .linenums > li:nth-child(4),
+.panel.green .prettyprint .linenums > li:nth-child(n+6):nth-child(-n+10) {
+  background-color: #222;
+}
+
+.box {
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background-color: white;
+  border-radius: 8px;
+  color: #222;
+  margin-left: 20px;
+  will-change: transform;
+}
+.box.active {
+  background-color: orange;
+  border: 2px solid white;
+}
+.description, .final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 80vh;
+}
+
+.container {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel {
+  font-weight: 300;
+}
